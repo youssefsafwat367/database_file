@@ -27,6 +27,7 @@ create table category (
     created_at 		datetime			default current_timestamp
 ) ;	
 create table cart (
+    cart_id 	    int		  			primary key auto_increment ,
 	product_id 		int		  			 not null  , 
     order_id 		int(20)   			 not null ,
 	price 			float	 			default 0 , 
